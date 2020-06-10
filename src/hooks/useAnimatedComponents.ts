@@ -41,7 +41,7 @@ const useAnimatedComponents = () => {
   const headerTransform = headerTranslate.getTranslateTransform();
   const footerTransform = footerTranslate.getTranslateTransform();
 
-  return [headerTransform, footerTransform, toggleVisible] as const;
+  return [headerTransform, footerTransform, toggleVisible];
 };
 
 export default useAnimatedComponents;

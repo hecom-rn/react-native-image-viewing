@@ -54,7 +54,7 @@ export const getImageTransform = (
   screen: Dimensions
 ) => {
   if (!image?.width || !image?.height) {
-    return [] as const;
+    return [];
   }
 
   const wScale = screen.width / image.width;
@@ -62,7 +62,7 @@ export const getImageTransform = (
   const scale = Math.min(wScale, hScale);
   const { x, y } = getImageTranslate(image, screen);
 
-  return [{ x, y }, scale] as const;
+  return [{ x, y }, scale];
 };
 
 export const getImageStyles = (

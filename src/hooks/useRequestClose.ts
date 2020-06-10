@@ -18,7 +18,7 @@ const useRequestClose = (onRequestClose: () => void) => {
       onRequestClose();
       setTimeout(() => setOpacity(1), 0);
     },
-  ] as const;
+  ];
 };
 
 export default useRequestClose;
