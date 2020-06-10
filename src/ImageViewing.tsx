@@ -94,7 +94,8 @@ function ImageViewing({
   }
 
   return (
-    <Modal
+    <View
+        style={{flex: 1}}
       transparent={presentationStyle === "overFullScreen"}
       visible={visible}
       presentationStyle={presentationStyle}
@@ -159,7 +160,7 @@ function ImageViewing({
           </Animated.View>
         )}
       </View>
-    </Modal>
+    </View>
   );
 }
 
